@@ -90,6 +90,9 @@ fetch("data.txt")
 // fetch("data.json").then((res) => res.text());
     // .then((data) => console.log(data));
 
+
+    /**** ---------Joke-app ------------------
+
     const myHeaders = new Headers();
     const init = {
         method: "GET",
@@ -158,7 +161,7 @@ fetch("data.txt")
 // npm i est une commande raccourci pour npm install qui permet d'installer un ou plusieurs modules Node.js/JavaScript. En ajoutant l'option -g, la commande npm i -g permet d'installer un module de manière globale sur le système plutôt qu'au sein d'un projet
 
 // creer un fichier db.json
-//**** */ json-server --w db.json
+//****  json-server --w db.json*/
 //**** */npx json-server --w db.json
 
 
@@ -258,21 +261,28 @@ async function fecthData() {
     executeFonction();
 }
 
+
 //**  Fonction fléché
 
 const  fetchData2 = async() => {
-
-    await fetch('monlien')
-    // attend que le await soit exécuté avant de faire la suite
-
-    executeFonction();
+  
+  await fetch('monlien')
+  // attend que le await soit exécuté avant de faire la suite
+  
+  executeFonction();
 }
+
+
 
 // Ce script JavaScript déclare une fonction asynchrone appelée "fetchData()". Cette fonction utilise l'instruction "await" pour attendre que la requête "fetch" vers l'URL "monlien" soit terminée avant de poursuivre l'exécution du code. "fetch" est une fonction native de JavaScript qui permet de récupérer des ressources à partir d'un serveur distant, par exemple un fichier JSON, un document HTML ou une image.
 
 // Une fois que la requête est terminée, la fonction "executeFonction()" est appelée pour traiter les données récupérées ou effectuer une opération supplémentaire. L'utilisation de "await" permet d'attendre la fin de la requête avant d'exécuter cette fonction, car elle pourrait dépendre des données obtenues.
 
 // Il est important de noter que pour utiliser l'instruction "await", la fonction parente doit être marquée comme "asynchrone", ce qui signifie qu'elle est capable d'utiliser "await" pour attendre des opérations asynchrones telles que "fetch". En résumé, ce code permet d'attendre la récupération de données depuis un serveur distant avant de réaliser d'autres opérations qui pourraient dépendre de ces données.
+
+
+// ----------------------------- user-app---------------------------
+
 
 
 //----------------------------------
@@ -461,3 +471,6 @@ document.cookie = "user_id=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
 document.cookie = "last_visit=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
 
 //Il est important de noter que les cookies peuvent présenter des risques pour la vie privée des utilisateurs s'ils sont utilisés de manière abusive. Il est donc recommandé de n'utiliser les cookies que pour stocker des informations qui sont utiles et nécessaires pour le fonctionnement d'un site Web.
+
+
+// meal app-------------------------------------------------------
