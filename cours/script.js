@@ -11,21 +11,55 @@
 // Voici un exemple simple d'utilisation de XMLHttpRequest :
 
 // Créer une nouvelle instance de XMLHttpRequest
-let xhr = new XMLHttpRequest();
-// Configurer la requête
-xhr.open('GET', "api", true);
-
-// Définir ce qui se passe lorsque la réponse est reçue
-xhr.onload =reqListener;
-
-// Envoyer la requête
-xhr.send();
-
-// Gérer les erreurs de réseau
-xhr.onerror= ()=>{};
-//Configurer la requête
-
-
-xhr.open('GET', 'https://api.blablagues.net/?rub=blagues', true);
+// let xhr = new XMLHttpRequest();
+// // Configurer la requête
+// xhr.open('GET', "api", true);
 
 // // Définir ce qui se passe lorsque la réponse est reçue
+// xhr.onload =reqListener;
+
+// // Envoyer la requête
+// xhr.send();
+
+// // Gérer les erreurs de réseau
+// xhr.onerror= ()=>{};
+// //Configurer la requête
+
+//Pratique
+
+let xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://api.blablagues.net/?rub=blagues', true);
+
+xhr.onload =function(){
+
+  if(xhr.status >=200 && xhr.status < 300){
+    // console.log(xhr.responseText);
+  }else{
+    // console.error("Error", responseText);
+  }  
+}
+xhr.onerror = ()=>{
+  // console.log('Erreur de réseau'); 
+}
+xhr.send()
+
+
+//----------------
+// FECTH
+//----------------
+
+// fetch("mon lien api", "objet d'options")
+// .then((response) =>{
+  //Instructions ...
+// })
+// .catch((error)=>{
+  //Instructions ...
+// })
+
+fetch("https://api.blablagues.net/?rub=blagues")
+.then((resp) =>{
+  console.log(resp);
+})
+.catch((error)=>{
+  console.log(error);
+})
