@@ -58,8 +58,20 @@ xhr.send()
 
 fetch("https://api.blablagues.net/?rub=blagues")
 .then((resp) =>{
-  console.log(resp);
+  // console.log(resp);
 })
 .catch((error)=>{
   console.log(error);
 })
+
+const myHeaders = new Headers();
+const init = {
+method: "GET",
+headers: myHeaders,
+mode: "no-cors",
+cache: "default",
+}
+
+
+fetch("http://facebook.com", init)
+.then((res) => console.log(res));
