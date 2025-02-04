@@ -115,10 +115,32 @@ const utilisateur = [
 
 const description = utilisateur.map(
   user => `${user.prenom} a ${user.age}ans`);
-  console.log(description);
+console.log(description);
 
-  const descriptString =description.join('\n')
-  console.log(descriptString);
+const descriptString = description.join('\n')
+console.log(descriptString);
+
+const produits = [
+  {
+  nom: "smartphone",
+  marque: "samsung",
+  model: "s25 ultra"
+},
+{
+  nom: "ordinateures",
+  marque: "mackbook",
+  model: "pro"
+}
+];
+
+const nproduits = produits.map(produits =>
+`  ${produits.nom }
+  ${ produits.marque}
+  ${produits.model}
+  `
+).join('\n');
+
+console.log(nproduits);
 
 
 
