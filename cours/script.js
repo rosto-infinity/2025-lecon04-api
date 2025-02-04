@@ -30,15 +30,15 @@
 let xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://api.blablagues.net/?rub=blagues', true);
 
-xhr.onload =function(){
+xhr.onload = function () {
 
-  if(xhr.status >=200 && xhr.status < 300){
+  if (xhr.status >= 200 && xhr.status < 300) {
     // console.log(xhr.responseText);
-  }else{
+  } else {
     // console.error("Error", responseText);
-  }  
+  }
 }
-xhr.onerror = ()=>{
+xhr.onerror = () => {
   // console.log('Erreur de réseau'); 
 }
 xhr.send()
@@ -50,28 +50,88 @@ xhr.send()
 
 // fetch("mon lien api", "objet d'options")
 // .then((response) =>{
-  //Instructions ...
+//Instructions ...
 // })
 // .catch((error)=>{
-  //Instructions ...
+//Instructions ...
 // })
 
 fetch("https://api.blablagues.net/?rub=blagues")
-.then((resp) =>{
-  // console.log(resp);
-})
-.catch((error)=>{
-  console.log(error);
-})
+  .then((resp) => {
+    // console.log(resp);
+  })
+  .catch((error) => {
+    console.log(error);
+  })
 
 const myHeaders = new Headers();
 const init = {
-method: "GET",
-headers: myHeaders,
-mode: "no-cors",
-cache: "default",
+  method: "GET",
+  headers: myHeaders,
+  mode: "no-cors",
+  cache: "default",
 }
 
 
-fetch("http://facebook.com", init)
-.then((res) => console.log(res));
+// fetch("http://facebook.com", init)
+// .then((res) => console.log(res));
+
+function bigUp() {
+  console.log("Bonjour");
+}
+bigUp()
+
+let a = "bonjour"
+console.log(typeof (a));
+
+let b = 15
+function add() {
+  console.log(a + b);
+}
+add()
+
+
+// let som= add(2, 89) 
+// console.log(som);
+
+
+const numbers = [1, 2, 3, 4, 5];
+
+const doubledNumbers = numbers.map(num => num * 2);
+
+console.log(doubledNumbers);
+// Output: [2, 4, 6, 8, 10]
+
+const nombres = [1, 3, 5, 7, 9];
+const double = nombres.map((nombres) => nombres * 2);
+
+console.log(double);
+
+const utilisateur = [
+  { prenom: "maiva", age: 16 },
+  { prenom: "ange", age: 17 },
+  { prenom: "merveille", age: 18 },
+];
+
+const description = utilisateur.map(
+  user => `${user.prenom} a ${user.age}ans`);
+  console.log(description);
+
+  const descriptString =description.join('\n')
+  console.log(descriptString);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
