@@ -1,0 +1,11 @@
+{
+  "name": "cours-crud-sever-json",
+  "version": "1.0.0",
+  "description": "Demarrer un server pour le CRUD",
+  "license": "ISC",
+  "author": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

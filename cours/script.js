@@ -77,16 +77,16 @@ const init = {
 // .then((res) => console.log(res));
 
 function bigUp() {
-  console.log("Bonjour");
+  // console.log("Bonjour");
 }
 bigUp()
 
 let a = "bonjour"
-console.log(typeof (a));
+// console.log(typeof (a));
 
 let b = 15
 function add() {
-  console.log(a + b);
+  // console.log(a + b);
 }
 add()
 
@@ -99,13 +99,13 @@ const numbers = [1, 2, 3, 4, 5];
 
 const doubledNumbers = numbers.map(num => num * 2);
 
-console.log(doubledNumbers);
+// console.log(doubledNumbers);
 // Output: [2, 4, 6, 8, 10]
 
 const nombres = [1, 3, 5, 7, 9];
 const double = nombres.map((nombres) => nombres * 2);
 
-console.log(double);
+// console.log(double);
 
 const utilisateur = [
   { prenom: "maiva", age: 16 },
@@ -115,10 +115,10 @@ const utilisateur = [
 
 const description = utilisateur.map(
   user => `${user.prenom} a ${user.age}ans`);
-console.log(description);
+// console.log(description);
 
 const descriptString = description.join('\n')
-console.log(descriptString);
+// console.log(descriptString);
 
 const produits = [
   {
@@ -140,9 +140,27 @@ const nproduits = produits.map(produits =>
   `
 ).join('\n');
 
-console.log(nproduits);
+// console.log(nproduits);
+
+//############""""""""""""""""""""""""""""""""""
+
+// CRUD => Create (POST), read (GET), Update (PUT), Delete (DELETE)
+// instalation de nodeJs
+//** npm -v
+// **cd cours
+// **npm init -y
 
 
+//******npm install -g json-server***********
+
+// L'expression npm i -g json-server est une commande qui s'exécute via le terminal/commande prompt/gitbash.
+// Elle utilise le gestionnaire de paquets (NPM) de Node.js pour installer globalement (-g) le module jsonserver qui permet de créer rapidement un serveur HTTP RESTful pour des opérations CRUD sur un fichier
+// JSON local.
+
+
+// creer un fichier db.json
+//**** */ json-server --w db.json
+//**** */npx json-server --w db.json
 
 
 
