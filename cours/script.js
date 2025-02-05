@@ -164,9 +164,38 @@ const nproduits = produits.map(produits =>
 
 
 
+const init2 = {
+  // method: "POST",
+  method: "DELETE",
+  headers: {
+  "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+  pseudo: "rostodev",
+  message: "Hello world!",
+  }),
+  mode: "cors",
+  credentials: "same-origin",
+  };
 
+document.querySelector('form').addEventListener('submit',
+    () =>{
+    fetch("http://localhost:3000/posts/8eff", init2)
+    .then(() => console.log("data envoyée"));
+      })
 
+ // Asynchrone
+    //-----------------
 
+    // **1
+    setInterval(() => {
+      // console.log("text");
+  }, 1000);
+  
+   //**2
+// Promise
+
+// fetch("mon lien").then((res)=> res)
 
 
 

@@ -249,6 +249,22 @@ document.querySelector("form").addEventListener("submit",
 
     //**2
 // Promise
+// Une Promise est un objet qui représente l'achèvement (ou l'échec) éventuel d'une opération asynchrone et sa valeur de résultat.
+
+// Les principales caractéristiques d'une Promise sont :
+
+// États : Une Promise peut être dans l'un des trois états :
+
+// Pending : L'état initial, lorsque l'opération n'est pas encore terminée.
+// Fulfilled : L'opération a réussi et la Promise a une valeur de résultat.
+// Rejected : L'opération a échoué et la Promise a une raison d'échec.
+// Méthodes :
+
+// .then() : Permet d'attacher des callbacks qui seront appelés lorsque la Promise sera soit résolue (Fulfilled), soit rejetée (Rejected).
+// .catch() : Permet d'attacher un callback qui sera appelé lorsque la Promise sera rejetée (Rejected).
+// .finally() : Permet d'attacher un callback qui sera appelé lorsque la Promise sera soit résolue, soit rejetée.
+// Enchaînement : Les Promises permettent d'enchaîner facilement les opérations asynchrones, en utilisant les méthodes .then() et .catch().
+
 
 // fetch("mon lien").then((res)=> res)
 
