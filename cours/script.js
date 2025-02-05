@@ -63,6 +63,7 @@ fetch("https://api.blablagues.net/?rub=blagues")
   .catch((error) => {
     console.log(error);
   })
+// console.log('CC-DA-samedi');
 
 const myHeaders = new Headers();
 const init = {
@@ -191,13 +192,24 @@ document.querySelector('form').addEventListener('submit',
     setInterval(() => {
       // console.log("text");
   }, 1000);
-  
+
    //**2
 // Promise
 
 // fetch("mon lien").then((res)=> res)
 
+// fetch("mon lien").then((res)=> res)
+// async/await
+async function fecthData() {
+await fectch('monlien')
+// attend que le await soit exécuté avant de faire la suite
+executeFonction();
+}
 
+const fecthData2 = async ()=>{
+  await fetch("mon lien");
+executeFonction();
+}
 
 
 
