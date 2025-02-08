@@ -45,6 +45,7 @@ const userDisplay = async () =>{
       (user) => 
         ` 
         <div class="card">
+       
           <img src="${user.picture.large}" 
           alt=" La phode de ${user.name.last}"  />
           <h4>${user.name.first} </h4> 
