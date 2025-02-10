@@ -27,21 +27,21 @@
 
 //Pratique
 
-let xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://api.blablagues.net/?rub=blagues', true);
+// let xhr = new XMLHttpRequest();
+// xhr.open('GET', 'https://api.blablagues.net/?rub=blagues', true);
 
-xhr.onload = function () {
+// xhr.onload = function () {
 
-  if (xhr.status >= 200 && xhr.status < 300) {
-    // console.log(xhr.responseText);
-  } else {
-    // console.error("Error", responseText);
-  }
-}
-xhr.onerror = () => {
-  // console.log('Erreur de réseau'); 
-}
-xhr.send()
+//   if (xhr.status >= 200 && xhr.status < 300) {
+//     // console.log(xhr.responseText);
+//   } else {
+//     // console.error("Error", responseText);
+//   }
+// }
+// xhr.onerror = () => {
+//   // console.log('Erreur de réseau'); 
+// }
+// xhr.send()
 
 
 //----------------
@@ -56,13 +56,13 @@ xhr.send()
 //Instructions ...
 // })
 
-fetch("https://api.blablagues.net/?rub=blagues")
-  .then((resp) => {
+// fetch("https://api.blablagues.net/?rub=blagues")
+  // .then((resp) => {
     // console.log(resp);
-  })
-  .catch((error) => {
-    console.log(error);
-  })
+  // })
+  // .catch((error) => {
+    // console.log(error);
+  // })
 // console.log('CC-DA-samedi');
 
 const myHeaders = new Headers();
@@ -211,6 +211,32 @@ const fecthData2 = async ()=>{
 executeFonction();
 }
 
+const a0 = { username: 'Myra' };
+const b0 = { username: 'Myra' };
+if (a0.username === b0.username) {
+  console.log('TRUE--------');
+} else {
+  console.log('FALSE----------');
+}
+
+const a11 = { username: 'Myra' };
+const b11 = { username: 'Myra' };
+if (a11 === b11) {
+  console.log('TRUE111111111111');
+} else {
+  console.log('FALSE1111111111111111');
+}
+
+
+const demo = (v) => {
+  if (v > 4) {
+    return "Hello";
+    if (v > 5){
+      return "World";
+    }
+  }
+}
+console.log(demo(10));
 
 
 
