@@ -210,35 +210,47 @@ const fecthData2 = async ()=>{
   await fetch("mon lien");
 executeFonction();
 }
+let ab
+console.log(ab);
 
-const a0 = { username: 'Myra' };
-const b0 = { username: 'Myra' };
-if (a0.username === b0.username) {
-  console.log('TRUE--------');
-} else {
-  console.log('FALSE----------');
+// if(ab){
+//  console.log('TRUE-----');
+ 
+// }else{
+//   console.log('FALSE-----');
+// }
+let jour =0
+switch (jour) {
+  case 0:
+      console.log("Dimanche");
+      break;
+  case 1:
+      console.log("Lundi");
+      break;
+  case 2:
+      console.log("Mardi");
+      break;
+  case 3:
+      console.log("Mercredi");
+      break;
+  case 4:
+      console.log("Jeudi");
+      break;
+  case 5:
+      console.log("Vendredi");
+      break;
+  case 6:
+      console.log("Samedi");
+      break;
+  default:
+      console.log("Jour invalide !");
 }
-
-const a11 = { username: 'Myra' };
-const b11 = { username: 'Myra' };
-if (a11 === b11) {
-  console.log('TRUE111111111111');
-} else {
-  console.log('FALSE1111111111111111');
+const names = ["Rostand", "Eva", "Myra"];
+// names = ["Jean"];
+const showWarningMessage = (title) => {
+  console.log(title) 
 }
-
-
-const demo = (v) => {
-  if (v > 4) {
-    return "Hello";
-    if (v > 5){
-      return "World";
-    }
-  }
-}
-console.log(demo(10));
-
-
+showWarningMessage({ 'true': 'rr', a:20})
 
 
 
